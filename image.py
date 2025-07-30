@@ -22,12 +22,12 @@ try:
     with open(output_path, "wb") as f:
         f.write(output.read())  
 
-    print(f"✅ Image saved as '{output_path}'")
+    print(f" Image saved as '{output_path}'")
     try:
         img = PILImage.open(output_path)
         img.show() 
     except Exception as view_error:
-        print("⚠️ Could not preview image:", view_error)
+        print(" Could not preview image:", view_error)
 
 except Exception as e:
-    print("❌ Error saving FileOutput:", e)
+    print(" Error saving FileOutput:", e)
